@@ -38,11 +38,11 @@ static pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
 
 static FILE *p_file = NULL;
 static FILE *g_file = NULL;
-static char p_filename[NSS_CACHE_PATH_LENGTH] = "/etc/passwd.cache";
-static char g_filename[NSS_CACHE_PATH_LENGTH] = "/etc/group.cache";
+static char p_filename[NSS_CACHE_PATH_LENGTH] = "/var/spool/nsscache/passwd.cache";
+static char g_filename[NSS_CACHE_PATH_LENGTH] = "/var/spool/nsscache/group.cache";
 #ifndef BSD
 static FILE *s_file = NULL;
-static char s_filename[NSS_CACHE_PATH_LENGTH] = "/etc/shadow.cache";
+static char s_filename[NSS_CACHE_PATH_LENGTH] = "/var/spool/nsscache/shadow.cache";
 #else
 extern int fgetpwent_r(FILE *, struct passwd *, char *, size_t, struct passwd **);
 extern int fgetgrent_r(FILE *, struct group *, char *, size_t, struct group **);
