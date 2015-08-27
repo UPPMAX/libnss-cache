@@ -7,7 +7,7 @@ Group: System Environment/Base
 Packager: Oliver Hookins <oliver.hookins@anchor.com.au>
 
 URL: http://code.google.com/p/nsscache/
-Source: http://nsscache.googlecode.com/files/%{name}-%{version}.tar.gz
+Source: https://github.com/UPPMAX/libnss-cache/archive/master.zip
 
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArchitectures: i386, x86_64
